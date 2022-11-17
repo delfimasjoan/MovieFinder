@@ -2,75 +2,78 @@
 <html>
     <head>
         <title>MovieFinder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Styles/LoginDesk.css">
+        <link rel="stylesheet" href="Styles/LoginMobile.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,500&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://file.myfontastic.com/etfv5szDc7ksNhnS7kzAvY/icons.css" rel="stylesheet">
+        <link href="httpsb://file.myfontastic.com/etfv5szDc7ksNhnS7kzAvY/icons.css" rel="stylesheet">
     </head>
     <body>
         <h1 id="movieFinder"><b>MOVIE</b><i>finder</i></h1>
-        <div id="box">
-            <div id="bienv" class="Title">
-                <h4 class="Title" id="Welcome">Welcome! Log in or Register</h4>
-                <p class="Title">Log in to find the movies you're looking for!</p>
-            </div>
-            <form id="login-g" >
-                <div id="complete">
-                    <input id="mail" class="login" type="email" placeholder="Email" required>
-                    <div class="password-wrap">
-                        <input id="password" class="login" type="text" placeholder="Password" required >
-                        <svg class="eye" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="9" cy="6" r="3.5" stroke="#2791C2"/>
-                            <path d="M17.5 6C17.5 6.08721 17.4673 6.24734 17.3611 6.48341C17.2583 6.71211 17.1003 6.98172 16.8869 7.27824C16.4603 7.87099 15.8333 8.54209 15.0502 9.17318C13.4791 10.4393 11.3365 11.5 9 11.5C6.6635 11.5 4.52093 10.4393 2.94978 9.17318C2.16665 8.54209 1.53968 7.87099 1.11309 7.27824C0.899686 6.98172 0.741704 6.71211 0.638862 6.48341C0.532701 6.24734 0.5 6.08721 0.5 6C0.5 5.91279 0.532701 5.75266 0.638862 5.51659C0.741704 5.28789 0.899686 5.01828 1.11309 4.72176C1.53968 4.12901 2.16665 3.45791 2.94978 2.82682C4.52093 1.56068 6.6635 0.5 9 0.5C11.3365 0.5 13.4791 1.56068 15.0502 2.82682C15.8333 3.45791 16.4603 4.12901 16.8869 4.72176C17.1003 5.01828 17.2583 5.28789 17.3611 5.51659C17.4673 5.75266 17.5 5.91279 17.5 6Z" stroke="#2791C2"/>
+        <div id="container">
+            <div id="box">
+                <div id="bienv" class="Title">
+                    <h4 class="Title" id="Welcome">Welcome! Log in or Register</h4>
+                    <p class="Title">Log in to find the movies you're looking for!</p>
+                </div>
+                <form id="login-g" >
+                    <div id="complete">
+                        <input id="mail" class="login" type="email" placeholder="Email" required>
+                        <div class="password-wrap">
+                            <input id="password" class="login" type="text" placeholder="Password" required >
+                            <svg class="eye" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="6" r="3.5" stroke="#2791C2"/>
+                                <path d="M17.5 6C17.5 6.08721 17.4673 6.24734 17.3611 6.48341C17.2583 6.71211 17.1003 6.98172 16.8869 7.27824C16.4603 7.87099 15.8333 8.54209 15.0502 9.17318C13.4791 10.4393 11.3365 11.5 9 11.5C6.6635 11.5 4.52093 10.4393 2.94978 9.17318C2.16665 8.54209 1.53968 7.87099 1.11309 7.27824C0.899686 6.98172 0.741704 6.71211 0.638862 6.48341C0.532701 6.24734 0.5 6.08721 0.5 6C0.5 5.91279 0.532701 5.75266 0.638862 5.51659C0.741704 5.28789 0.899686 5.01828 1.11309 4.72176C1.53968 4.12901 2.16665 3.45791 2.94978 2.82682C4.52093 1.56068 6.6635 0.5 9 0.5C11.3365 0.5 13.4791 1.56068 15.0502 2.82682C15.8333 3.45791 16.4603 4.12901 16.8869 4.72176C17.1003 5.01828 17.2583 5.28789 17.3611 5.51659C17.4673 5.75266 17.5 5.91279 17.5 6Z" stroke="#2791C2"/>
+                            </svg>    
+                        </div>    
+                    </div>
+                    <div class="remem-forgot">
+                        <div id="remember">
+                            <input  class="remember" type="checkbox" name="remember">
+                            <label for="remember" class="remember">Remember me</label> 
+                        </div>
+                        <div class="forgot">
+                            <a href="#" id="forgot">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <input id="submi" type="button" value="Log in">
+                </form>
+                <p class="not-regist">Not register yet? <a class="not-regist" href="#">Register now!</a></p>
+                <div class="or">
+                    <hr class="line"><p>or</p><hr class="line">
+                </div>
+                <div id="other-log">
+                    <div class="apps">
+                        <svg class="apps-svg" id="fb" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.7811 30H6.21894C3.31953 30 1 27.5976 1 24.5947V6.40533C1 3.40237 3.31953 1 6.21894 1H23.7811C26.6805 1 29 3.40237 29 6.40533V24.5947C29 27.5976 26.6805 30 23.7811 30Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.8969 9.25473H19.5199V5.75244H17.0854C13.6685 5.75244 12.0028 7.80256 12.0028 10.7069V13.4404H9.31201V16.7718H12.0028V25.2286H16.0176V16.7718H18.7084L19.4772 13.4404H16.0176V11.1767C16.0176 10.2798 16.5302 9.25473 17.8969 9.25473Z" fill="white"/>
+                        </svg>                        
+                        <a class="apps-n" href="#">Login with Facebook</a>
+                    </div>
+                    <div class="apps">
+                        <svg class="apps-svg" id="twitter" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.51428 22.611C9.47256 22.7864 11.1754 22.3039 12.7506 21.1636C12.41 21.0758 12.112 21.032 11.8566 20.9442C10.7923 20.5934 10.0686 19.8916 9.60028 18.8389C9.47256 18.5319 9.47256 18.488 9.81313 18.488C10.1537 18.488 10.4943 18.5319 10.92 18.4003C10.2814 18.2248 9.77056 17.9178 9.34485 17.5231C8.66371 16.8651 8.238 16.0318 8.19542 15.0668C8.15285 14.6721 8.19542 14.6282 8.53599 14.8037C8.87656 14.9791 9.21714 15.0668 9.64285 15.0668C9.38742 14.7598 9.08942 14.5405 8.91914 14.2335C8.11028 13.0492 7.98257 11.7772 8.53599 10.4614C8.66371 10.1105 8.74885 10.1105 9.00428 10.3737C10.2388 11.7772 11.6863 12.8299 13.4317 13.4439C14.198 13.7071 14.9643 13.8826 15.7731 13.9703C16.1988 14.0141 16.2414 13.9703 16.1563 13.5317C15.986 12.0404 16.7948 10.5052 18.1145 9.80345C19.4343 9.10167 21.1371 9.27712 22.2014 10.3298C22.4143 10.5491 22.6271 10.5491 22.8825 10.5052C23.436 10.3298 23.9894 10.1543 24.5002 9.84732C24.5854 9.80345 24.6705 9.71573 24.7982 9.75959C24.5428 10.5491 24.0745 11.1632 23.436 11.6895C24.032 11.6018 24.628 11.4263 25.224 11.207C25.224 11.4263 25.0962 11.514 25.0537 11.6456C24.6705 12.1281 24.2874 12.5667 23.8191 12.9176C23.6062 13.0931 23.5211 13.2685 23.5211 13.5755C23.5637 16.0756 22.7974 18.3126 21.35 20.2863C19.6471 22.6548 17.3057 23.9707 14.496 24.3216C12.1546 24.6286 9.94085 24.1461 7.89742 22.9619C7.81228 22.918 7.76971 22.8741 7.68457 22.8303C7.642 22.7426 7.59942 22.6987 7.51428 22.611Z" fill="white"/>
+                            <path d="M25.3942 31.6903H7.34397C4.36398 31.6903 1.97998 29.234 1.97998 26.1637V7.56651C1.97998 4.49622 4.36398 2.03998 7.34397 2.03998H25.3942C28.3742 2.03998 30.7582 4.49622 30.7582 7.56651V26.1637C30.7582 29.234 28.3742 31.6903 25.3942 31.6903Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                        <a class="apps-n" href="#">Login with Twitter</a>
+                    </div>
+                    <div class="apps">
+                        <svg class="apps-svg" id="google" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_433_139)">
+                            <path d="M27.8111 11.8535H22.1444H14.3557V17.3822H22.1633C21.9114 18.8471 21.3699 20.1465 20.2555 21.1529C19.9406 21.4331 19.6069 21.6943 19.2543 21.9299C17.8754 22.8471 16.2258 23.3822 14.4565 23.3822C10.6283 23.3822 7.37936 20.8854 6.20193 17.414C5.89971 16.5159 5.7297 15.5541 5.7297 14.5478C5.7297 13.535 5.89971 12.5541 6.20823 11.6497C7.39195 8.19745 10.6346 5.71975 14.4502 5.71975C16.528 5.71975 18.3414 6.63694 19.8273 7.89172L23.9451 3.79618L23.9388 3.78981C21.414 1.49682 18.0139 0 14.3557 0C8.76456 0 3.88487 3.30573 1.51743 8.07643C0.547785 10.0318 0 12.2293 0 14.5541C0 16.8726 0.541489 19.0637 1.49854 21C3.84079 25.7452 8.68271 29 14.2739 29C17.9132 29 21.3132 27.7643 23.8381 25.4968C23.8507 25.4841 23.8696 25.4713 23.8822 25.4522C26.1363 23.4013 27.3641 20.5478 27.8111 17.3822V17.3758C27.8111 17.3758 28 15.2611 28 14.5541C28 13.879 27.8111 11.8535 27.8111 11.8535Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_433_139">
+                            <rect width="28" height="29" fill="white"/>
+                            </clipPath>
+                            </defs>
                         </svg>    
-                    </div>    
-                </div>
-                <div class="remem-forgot">
-                    <div id="remember">
-                        <input  class="remember" type="checkbox" name="remember">
-                        <label for="remember" class="remember">Remember me</label> 
+                        <a class="apps-n" href="#">Login with Google</a>
                     </div>
-                    <div class="forgot">
-                        <a href="#" id="forgot">Forgot Password?</a>
-                    </div>
-                </div>
-                <input id="submi" type="button" value="Log in">
-            </form>
-            <p class="not-regist">Not register yet? <a class="not-regist" href="#">Register now!</a></p>
-            <div class="or">
-                <hr class="line"><p>or</p><hr class="line">
+                </div>       
             </div>
-            <div id="other-log">
-                <div class="apps">
-                    <svg class="apps-svg" id="fb" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.7811 30H6.21894C3.31953 30 1 27.5976 1 24.5947V6.40533C1 3.40237 3.31953 1 6.21894 1H23.7811C26.6805 1 29 3.40237 29 6.40533V24.5947C29 27.5976 26.6805 30 23.7811 30Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M17.8969 9.25473H19.5199V5.75244H17.0854C13.6685 5.75244 12.0028 7.80256 12.0028 10.7069V13.4404H9.31201V16.7718H12.0028V25.2286H16.0176V16.7718H18.7084L19.4772 13.4404H16.0176V11.1767C16.0176 10.2798 16.5302 9.25473 17.8969 9.25473Z" fill="white"/>
-                    </svg>                        
-                    <a class="apps-n" href="#">Login with Facebook</a>
-                </div>
-                <div class="apps">
-                    <svg class="apps-svg" id="twitter" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.51428 22.611C9.47256 22.7864 11.1754 22.3039 12.7506 21.1636C12.41 21.0758 12.112 21.032 11.8566 20.9442C10.7923 20.5934 10.0686 19.8916 9.60028 18.8389C9.47256 18.5319 9.47256 18.488 9.81313 18.488C10.1537 18.488 10.4943 18.5319 10.92 18.4003C10.2814 18.2248 9.77056 17.9178 9.34485 17.5231C8.66371 16.8651 8.238 16.0318 8.19542 15.0668C8.15285 14.6721 8.19542 14.6282 8.53599 14.8037C8.87656 14.9791 9.21714 15.0668 9.64285 15.0668C9.38742 14.7598 9.08942 14.5405 8.91914 14.2335C8.11028 13.0492 7.98257 11.7772 8.53599 10.4614C8.66371 10.1105 8.74885 10.1105 9.00428 10.3737C10.2388 11.7772 11.6863 12.8299 13.4317 13.4439C14.198 13.7071 14.9643 13.8826 15.7731 13.9703C16.1988 14.0141 16.2414 13.9703 16.1563 13.5317C15.986 12.0404 16.7948 10.5052 18.1145 9.80345C19.4343 9.10167 21.1371 9.27712 22.2014 10.3298C22.4143 10.5491 22.6271 10.5491 22.8825 10.5052C23.436 10.3298 23.9894 10.1543 24.5002 9.84732C24.5854 9.80345 24.6705 9.71573 24.7982 9.75959C24.5428 10.5491 24.0745 11.1632 23.436 11.6895C24.032 11.6018 24.628 11.4263 25.224 11.207C25.224 11.4263 25.0962 11.514 25.0537 11.6456C24.6705 12.1281 24.2874 12.5667 23.8191 12.9176C23.6062 13.0931 23.5211 13.2685 23.5211 13.5755C23.5637 16.0756 22.7974 18.3126 21.35 20.2863C19.6471 22.6548 17.3057 23.9707 14.496 24.3216C12.1546 24.6286 9.94085 24.1461 7.89742 22.9619C7.81228 22.918 7.76971 22.8741 7.68457 22.8303C7.642 22.7426 7.59942 22.6987 7.51428 22.611Z" fill="white"/>
-                        <path d="M25.3942 31.6903H7.34397C4.36398 31.6903 1.97998 29.234 1.97998 26.1637V7.56651C1.97998 4.49622 4.36398 2.03998 7.34397 2.03998H25.3942C28.3742 2.03998 30.7582 4.49622 30.7582 7.56651V26.1637C30.7582 29.234 28.3742 31.6903 25.3942 31.6903Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                        
-                    <a class="apps-n" href="#">Login with Twitter</a>
-                </div>
-                <div class="apps">
-                    <svg class="apps-svg" id="google" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_433_139)">
-                        <path d="M27.8111 11.8535H22.1444H14.3557V17.3822H22.1633C21.9114 18.8471 21.3699 20.1465 20.2555 21.1529C19.9406 21.4331 19.6069 21.6943 19.2543 21.9299C17.8754 22.8471 16.2258 23.3822 14.4565 23.3822C10.6283 23.3822 7.37936 20.8854 6.20193 17.414C5.89971 16.5159 5.7297 15.5541 5.7297 14.5478C5.7297 13.535 5.89971 12.5541 6.20823 11.6497C7.39195 8.19745 10.6346 5.71975 14.4502 5.71975C16.528 5.71975 18.3414 6.63694 19.8273 7.89172L23.9451 3.79618L23.9388 3.78981C21.414 1.49682 18.0139 0 14.3557 0C8.76456 0 3.88487 3.30573 1.51743 8.07643C0.547785 10.0318 0 12.2293 0 14.5541C0 16.8726 0.541489 19.0637 1.49854 21C3.84079 25.7452 8.68271 29 14.2739 29C17.9132 29 21.3132 27.7643 23.8381 25.4968C23.8507 25.4841 23.8696 25.4713 23.8822 25.4522C26.1363 23.4013 27.3641 20.5478 27.8111 17.3822V17.3758C27.8111 17.3758 28 15.2611 28 14.5541C28 13.879 27.8111 11.8535 27.8111 11.8535Z" fill="white"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_433_139">
-                        <rect width="28" height="29" fill="white"/>
-                        </clipPath>
-                        </defs>
-                    </svg>    
-                    <a class="apps-n" href="#">Login with Google</a>
-                </div>
-            </div> 
-                      
         </div>
     </body>
 </html>
