@@ -1,0 +1,272 @@
+html{
+    background-color: #1E1E1E;
+    position: relative;
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+header{
+    position:sticky;
+    margin-top:0;
+    height: 4.372rem;
+    width: 100%;
+    background: #2791C2;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+#MovieFinder{
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FFFFFF;
+
+    left:6.25rem;
+}
+.search-bar{
+    align-self: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width:24rem;
+    height:2.623rem;
+    background: #FFFFFF;
+    border-radius: 0.3125rem;
+}
+.search-bar svg{
+    background-color: #FFFFFF;
+    width:2.1875rem;
+    height:2.1856rem;
+    /* border: 1.5px solid #BCBCBC */
+}
+.search-bar input{
+    background-color:#FFFFFF;
+    border:#FFFFFF;
+    font-family: 'Open Sans';
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0em;
+    text-align: left;
+
+    display:flex;
+    height:auto;
+    flex-grow: 2;
+    padding-left: 0.4375rem;
+}
+.porfile{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+#Log-out{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 0.75rem;
+}
+.porfile svg{
+    width:2.8125rem;
+    height:2.81rem;
+}
+
+.banner{
+    background: linear-gradient(90deg, #080E20 0%, rgba(29, 29, 29, 0) 65.46%);
+    background-image: url('Avatar 1.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 34.349rem;
+    margin-top:0;
+}
+
+.banner-text{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 11.1875rem;
+    margin-top: 5.558rem;
+}
+.banner-text h6{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: #0FEFFD;
+
+    margin-bottom: 1.33rem;
+}
+.banner-text h5{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    color: #FFFFFF;
+
+    margin-top: 0.8118rem;
+    margin-bottom: 1.249rem;
+}
+.banner-text p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+
+    width:37.81rem;
+    text-align: left;
+    margin-bottom: 2.392rem;
+}
+#watch-click{
+    width:16.31rem;
+    height:3.4375rem;
+    background: #2791C2;
+    border: #2791C2;
+    border-radius: 1.9365rem;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    color: #FFFFFF;
+}
+.watch{
+    display:flex;
+    flex-direction:row;
+    margin-left: 13rem;
+    margin-right: 13.125rem;
+    justify-content: space-between;
+    align-content:center;
+}
+.watch h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    color: #FFFFFF;
+}
+#order{
+    display: flex;
+    flex-direction: row;
+}
+#row-bt{
+    background-color: #1E1E1E;
+    border:#1E1E1E;
+}
+#row-bt:hover{
+    cursor:pointer;
+}
+#col-bt:hover{
+    cursor: pointer;
+}
+#col-bt{
+    background-color: #1E1E1E;
+    border:#1E1E1E;
+}
+.all-movies-row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 11.125rem;
+    margin-right: 11.25rem;
+}
+.movie-row{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 20rem;
+    height: 27.48rem;
+    margin-left: 1.875rem;
+}
+.all-movies-col{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 0.8125rem;
+    margin-left: 13rem;
+    margin-right: 13.125rem;
+}
+.movie-col{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 63.875rem;
+    height: 27.5rem;
+    margin-bottom: 3.125rem;
+    padding-left: 8rem;
+}
+.movie h5{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    padding-left: 1.875rem;
+    padding-bottom: 1.5rem;
+}
+.movie svg{
+    padding-left: 1.875rem;
+}
+.movie p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 1.999rem;
+    /* width:14.5rem; */
+    text-size-adjust: 80%;
+    margin-left:1.875rem;
+    margin-right: 1.999rem;
+}
+#prey{
+    background-image: url('Img/Prey=default.png');
+    background-size: cover;
+    width: 100%;
+
+}
+#jurassic{
+    background-image: url('Img/Jurassic=default.png');
+    background-size: cover;
+    width: 100%;
+}
+#godzilla{
+    background-image: url('Img/Godzila=default.png');
+    background-size: cover;
+    width: 100%;
+}
+#prey:hover{
+    background-image: url('Img/Prey=hover.png');
+}
+#jurassic:hover{
+    background-image: url('Img/Jurassic=hover.png');
+}
+#godzilla:hover{
+    background-image: url('Img/Godzila=hover.png');
+}

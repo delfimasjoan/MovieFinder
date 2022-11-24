@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Styles/HomeGrid.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,500&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="httpsb://file.myfontastic.com/etfv5szDc7ksNhnS7kzAvY/icons.css" rel="stylesheet">
+        <script defer src="script/cards-display.js"></script> 
+    </head>
+    <body>
+        <header>
+            <h1 id ="MovieFinder"><b>MOVIE</b><i>finder</i></h1>
+            <div class="search-bar">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.9807 17.6543L17.4499 18.1231L22.403 23.0722L23.1056 22.3702L18.1534 17.4219L17.6833 16.9522L18.093 16.429C19.3542 14.8182 20.0397 12.832 20.0402 10.7869L16.9807 17.6543ZM16.9807 17.6543L16.458 18.0627M16.9807 17.6543L16.458 18.0627M16.458 18.0627C14.846 19.3224 12.8584 20.007 10.8118 20.0075L16.458 18.0627ZM10.8116 20.0075C5.72346 20.0074 1.58331 15.8696 1.58331 10.7869C1.58331 5.70422 5.72354 1.56642 10.8118 1.56642C15.8999 1.56642 20.0401 5.70412 20.0402 10.7868L10.8116 20.0075ZM19.0456 10.7869C19.0456 6.24811 15.3527 2.55905 10.8118 2.55905C6.27077 2.55905 2.57792 6.24811 2.57792 10.7869C2.57792 15.3258 6.27077 19.0148 10.8118 19.0148C15.3527 19.0148 19.0456 15.3258 19.0456 10.7869Z" fill="white" stroke="#BCBCBC" stroke-width="1.5"/>
+                </svg> 
+                <input type="text" placeholder="Search movies...">
+            </div>
+            <div class="porfile">
+                <a id="Log-out" href="#">Log out</a>
+                <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="22.5" cy="23.4737" rx="22.5" ry="22.4833" fill="#D9D9D9"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7667 24.9278C26.6203 24.9278 29.7443 21.8062 29.7443 17.9554C29.7443 14.1046 26.6203 10.983 22.7667 10.983C18.913 10.983 15.7891 14.1046 15.7891 17.9554C15.7891 21.8062 18.913 24.9278 22.7667 24.9278Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M33.5333 35.0696C31.9203 30.51 27.6063 27.4617 22.7667 27.4617C17.9271 27.4617 13.613 30.51 12 35.0696" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>    
+            </div>
+        </header>
+        <section class="banner">
+            <div class="banner-text">
+                <h6>Science Fiction</h6>    
+                <div class="stars">
+                    <svg width="94" height="13" viewBox="0 0 94 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66667 0.187897L8.33333 4.96954H13.3333L9.44444 8.06354L10.8333 12.8452L6.66667 10.0325L2.5 12.8452L3.88889 8.06354L0 4.96954H5L6.66667 0.187897ZM26.6667 0.187897L28.3333 4.96954H33.3333L29.4444 8.06354L30.8333 12.8452L26.6667 10.0325L22.5 12.8452L23.8889 8.06354L20 4.96954H25L26.6667 0.187897ZM48.3333 4.96954L46.6667 0.187897L45 4.96954H40L43.8889 8.06354L42.5 12.8452L46.6667 10.0325L50.8333 12.8452L49.4444 8.06354L53.3333 4.96954H48.3333ZM66.6667 0.187897L68.3333 4.96954H73.3333L69.4444 8.06354L70.8333 12.8452L66.6667 10.0325L62.5 12.8452L63.8889 8.06354L60 4.96954H65L66.6667 0.187897ZM88.3333 4.96954L86.6667 0.187897L85 4.96954H80L83.8889 8.06354L82.5 12.8452L86.6667 10.0325L90.8333 12.8452L89.4444 8.06354L93.3333 4.96954H88.3333Z" fill="#FF9900"/>
+                    </svg>                    
+                </div>
+                <h5>Avatar 2</h5>
+                <p>Set more than a decade after the events of the first film, Avatar: The Way of Water begins to tell the story of the Sully family, the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.</p>
+                <button id="watch-click" name="Watch">Watch Now</button>
+            </div>
+        </section>
+        <section class="most-watched">
+            <div class="watch">
+                <h2>Most Watched Movies</h2>
+                <div id="order">
+                    <button id="row-bt" onclick="toggleDisplay()">
+                        <svg width="58" height="37" viewBox="0 0 58 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.508118" width="58" height="35.9733" rx="3" fill="#373737"/>
+                            <rect x="39" y="6.50812" width="12" height="24" rx="2" fill="#D9D9D9"/>
+                            <rect x="23" y="6.50812" width="12" height="24" rx="2" fill="#D9D9D9"/>
+                            <rect x="7" y="6.50812" width="12" height="24" rx="2" fill="#D9D9D9"/>
+                        </svg>
+                    </button>
+                    <button id="col-bt" onclick="toggleDisplay()">
+                        <svg width="59" height="37" viewBox="0 0 59 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="7" y="6.50812" width="45" height="24" rx="2" fill="#D9D9D9"/>
+                        </svg>
+                    </button>                                                
+                </div> 
+            </div>
+            <div class="all-movies-row movies">
+                <div class="movie-row movie" id="prey">
+                    <h5>Prey</h5>
+                    <div class="stars">
+                        <svg width="94" height="13" viewBox="0 0 94 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66667 0.187897L8.33333 4.96954H13.3333L9.44444 8.06354L10.8333 12.8452L6.66667 10.0325L2.5 12.8452L3.88889 8.06354L0 4.96954H5L6.66667 0.187897ZM26.6667 0.187897L28.3333 4.96954H33.3333L29.4444 8.06354L30.8333 12.8452L26.6667 10.0325L22.5 12.8452L23.8889 8.06354L20 4.96954H25L26.6667 0.187897ZM48.3333 4.96954L46.6667 0.187897L45 4.96954H40L43.8889 8.06354L42.5 12.8452L46.6667 10.0325L50.8333 12.8452L49.4444 8.06354L53.3333 4.96954H48.3333ZM66.6667 0.187897L68.3333 4.96954H73.3333L69.4444 8.06354L70.8333 12.8452L66.6667 10.0325L62.5 12.8452L63.8889 8.06354L60 4.96954H65L66.6667 0.187897ZM88.3333 4.96954L86.6667 0.187897L85 4.96954H80L83.8889 8.06354L82.5 12.8452L86.6667 10.0325L90.8333 12.8452L89.4444 8.06354L93.3333 4.96954H88.3333Z" fill="#FF9900"/>
+                        </svg>                    
+                    </div>
+                    <p>In 1719 in the Great Plains, Naru, a young Comanche woman trained as a healer, dreams of becoming a great hunter.</p>
+                </div>
+                <div class="movie-row movie" id="jurassic">
+                    <h5>Jurassic World: Dominion</h5>
+                    <div class="stars">
+                        <svg width="94" height="13" viewBox="0 0 94 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66667 0.187897L8.33333 4.96954H13.3333L9.44444 8.06354L10.8333 12.8452L6.66667 10.0325L2.5 12.8452L3.88889 8.06354L0 4.96954H5L6.66667 0.187897ZM26.6667 0.187897L28.3333 4.96954H33.3333L29.4444 8.06354L30.8333 12.8452L26.6667 10.0325L22.5 12.8452L23.8889 8.06354L20 4.96954H25L26.6667 0.187897ZM48.3333 4.96954L46.6667 0.187897L45 4.96954H40L43.8889 8.06354L42.5 12.8452L46.6667 10.0325L50.8333 12.8452L49.4444 8.06354L53.3333 4.96954H48.3333ZM66.6667 0.187897L68.3333 4.96954H73.3333L69.4444 8.06354L70.8333 12.8452L66.6667 10.0325L62.5 12.8452L63.8889 8.06354L60 4.96954H65L66.6667 0.187897ZM88.3333 4.96954L86.6667 0.187897L85 4.96954H80L83.8889 8.06354L82.5 12.8452L86.6667 10.0325L90.8333 12.8452L89.4444 8.06354L93.3333 4.96954H88.3333Z" fill="#FF9900"/>
+                        </svg> 
+                    </div>
+                    <p>Four years after the Lockwood Estate incident and the cataclysmic volcanic eruption on Isla Nublar.</p>
+                </div>
+                <div class="movie-row movie"  id="godzilla">
+                    <h5>Godzilla vs Kong</h5>
+                    <div class="stars">
+                        <svg width="94" height="13" viewBox="0 0 94 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66667 0.187897L8.33333 4.96954H13.3333L9.44444 8.06354L10.8333 12.8452L6.66667 10.0325L2.5 12.8452L3.88889 8.06354L0 4.96954H5L6.66667 0.187897ZM26.6667 0.187897L28.3333 4.96954H33.3333L29.4444 8.06354L30.8333 12.8452L26.6667 10.0325L22.5 12.8452L23.8889 8.06354L20 4.96954H25L26.6667 0.187897ZM48.3333 4.96954L46.6667 0.187897L45 4.96954H40L43.8889 8.06354L42.5 12.8452L46.6667 10.0325L50.8333 12.8452L49.4444 8.06354L53.3333 4.96954H48.3333ZM66.6667 0.187897L68.3333 4.96954H73.3333L69.4444 8.06354L70.8333 12.8452L66.6667 10.0325L62.5 12.8452L63.8889 8.06354L60 4.96954H65L66.6667 0.187897ZM88.3333 4.96954L86.6667 0.187897L85 4.96954H80L83.8889 8.06354L82.5 12.8452L86.6667 10.0325L90.8333 12.8452L89.4444 8.06354L93.3333 4.96954H88.3333Z" fill="#FF9900"/>
+                        </svg> 
+                    </div>
+                    <p>Five years after Godzilla defeated King Ghidorah, Kong is monitored by Monarch within a giant dome on Skull Island. </p>
+                </div>
+            </div>
+        </section>
+    </body>  
+</html>
