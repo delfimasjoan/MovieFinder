@@ -1,0 +1,12 @@
+{
+    "users":[
+        {
+            "email":"test_email@gmail.com",
+            "password":"test_password1"
+        },
+        {
+            "email":"test_email2@gmail.com.ar",
+            "password":"miContraseña123!"
+        }
+    ]
+}
