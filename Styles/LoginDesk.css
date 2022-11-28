@@ -128,7 +128,7 @@ h4.Title{
     height: auto;
     flex-grow: initial;
 
-    border-color: #FFFFFF;
+    border: #FFFFFF;
 }
 
 .password-wrap{
@@ -143,18 +143,23 @@ h4.Title{
 
     display:flex;
     flex-direction: row;
-    justify-content: baseline;
+    justify-content: flex-end;
 }
 
-.password-wrap svg{
+#eye-button{
+    display:flex;
+    align-self:center;
+    color:#2791C2;
+    background-color: #FFFFFF;
+    border: #FFFFFF;
+    cursor:pointer;
+
+}
+.eye{
     align-self: center;
     width: 18px;
     border-radius: 0px;
-
-    color:#2791C2;
-    background-color: #FFFFFF;
 }
-
 div.remem-forgot{
     display:flex;
     flex-direction: row;
@@ -240,6 +245,8 @@ label.remember{
     margin-left: 2.875rem;
     padding: 0.5rem 1.125rem 0.5rem 1.125rem;
     gap: 0.25rem;
+
+    cursor:pointer;
 }
 
 .not-regist{
