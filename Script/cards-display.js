@@ -1,4 +1,5 @@
 const cards = document.querySelector(".movies");
+const text = document.querySelector("#movie-text");
 
 let layout = "column";
 
@@ -17,6 +18,7 @@ function toggleDisplay() {
     cardsArray.forEach((card) => {
       card.classList.remove("movie-row");
       card.classList.add("movie-col");
+      text.style.width= "14.5rem";
     });
 
     // reassignin the value of the variable to single layout
@@ -29,6 +31,7 @@ function toggleDisplay() {
     cardsArray.forEach((card) => {
       card.classList.remove("movie-col");
       card.classList.add("movie-row");
+      text.style.width= "48.30rem";
     });
 
     layout = "column";

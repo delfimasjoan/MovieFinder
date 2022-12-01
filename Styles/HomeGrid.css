@@ -61,6 +61,56 @@ header{
     flex-grow: 2;
     padding-left: 0.4375rem;
 }
+.search-res{
+    width: 24rem;
+    height: 18.75rem;
+    position: absolute;
+    top:3.623rem;
+    overflow-y:auto;
+    overflow-x:hidden;
+    background-color: transparent;
+}
+.search-res::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: rgba(39,145,194,0.3);
+    border-radius: 1.25rem;
+}
+.search-res::-webkit-scrollbar-thumb{
+    background-color: rgba(39,145,194,0.7);
+    border-radius: 1.25rem;
+}
+.search-res a{
+    width:100%;
+    height:5.125rem;
+    border: 1px solid rgb(184,184,184,.3);
+    border-radius: 0.3125rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color:rgba(39,145,194,0.27) ;
+    display: none;
+}
+.search-res a:hover{
+    cursor:pointer;
+    background-color:rgba(39,145,194,0.4);
+}
+.search-res img{
+    width:3.75rem;
+    height:4.8125rem;
+    border-radius: 0.3125rem;
+    margin: 0 0.3125rem;
+}
+.search-res .content-search h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size:1rem;
+    color:#FFFFFF;
+    margin-left: 0.5rem;
+    padding-left: 0rem;
+
+}
 .porfile{
     display:flex;
     flex-direction:row;
@@ -84,9 +134,11 @@ header{
 
 .banner{
     background: linear-gradient(90deg, #080E20 0%, rgba(29, 29, 29, 0) 65.46%);
-    background-image: url('Avatar1.png');
-    background-position: center;
-    background-size: cover;
+    /* background-image: url('Avatar1.png'); */
+    background-position-x: center;
+    background-position-y:top;
+    
+    background-size:cover;
     width: 100%;
     height: 34.349rem;
     margin-top:0;
@@ -100,7 +152,7 @@ header{
     margin-left: 11.1875rem;
     margin-top: 5.558rem;
 }
-.banner-text h6{
+#banner-genre{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -110,7 +162,7 @@ header{
 
     margin-bottom: 1.33rem;
 }
-.banner-text h5{
+#banner-title{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -121,7 +173,7 @@ header{
     margin-top: 0.8118rem;
     margin-bottom: 1.249rem;
 }
-.banner-text p{
+#banner-text{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -182,12 +234,18 @@ header{
     border:#1E1E1E;
 }
 .all-movies-row{
-    display:flex;
+    display: grid;
+	grid-template-columns: repeat(3, 20rem);
+	gap: 3.875rem;
+    /* display:flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
+    align-content: center; */
     margin-left: 11.125rem;
     margin-right: 11.25rem;
+
+    background-size: cover;
+    width: 100%;
 }
 .movie-row{
     display:flex;
@@ -197,6 +255,10 @@ header{
     width: 20rem;
     height: 27.48rem;
     margin-left: 1.875rem;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    min-height: 12.5rem;
 }
 .all-movies-col{
     display:flex;
@@ -206,6 +268,9 @@ header{
     margin-top: 0.8125rem;
     margin-left: 13rem;
     margin-right: 13.125rem;
+
+    background-size: cover;
+    width: 100%;
 }
 .movie-col{
     display:flex;
@@ -216,22 +281,27 @@ header{
     height: 27.5rem;
     margin-bottom: 3.125rem;
     padding-left: 8rem;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 }
-.movie h5{
+#movie-title{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.875rem;
     color: #FFFFFF;
+    padding-bottom: 0;
+    padding-left: 1.875rem;
+    margin-bottom: 1.5rem;
+}
+#movie-rating{
+    padding-left: 1.875rem;
     margin-bottom: 0;
-    padding-left: 1.875rem;
-    padding-bottom: 1.5rem;
+    margin-top:0;
 }
-.movie svg{
-    padding-left: 1.875rem;
-}
-.movie p{
+#movie-text{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -239,34 +309,37 @@ header{
     line-height: 1.25rem;
     color: #FFFFFF;
     text-align: left;
-    margin-bottom: 1.999rem;
-    /* width:14.5rem; */
+    margin-bottom: 1.999rem; 
     text-size-adjust: 80%;
     margin-left:1.875rem;
     margin-right: 1.999rem;
 }
-#prey{
-    background-image: url('Img/Prey=default.png');
-    background-size: cover;
-    width: 100%;
 
-}
-#jurassic{
-    background-image: url('Img/Jurassic=default.png');
+#mov:hover{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
     background-size: cover;
-    width: 100%;
 }
-#godzilla{
-    background-image: url('Img/Godzila=default.png');
-    background-size: cover;
-    width: 100%;
+
+#watch{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1px;
+    width:4.8125rem;
+    height: 2.875rem;
+
+    text-align: center;
+    color: #BCBCBC;
+
+    margin-left: 1.0623rem;
+    margin-top: 0.625rem;
+
+    display: none;
+    position: absolute;
 }
-#prey:hover{
-    background-image: url('Img/Prey=hover.png');
+
+#watch:hover{
+    display:block;
 }
-#jurassic:hover{
-    background-image: url('Img/Jurassic=hover.png');
-}
-#godzilla:hover{
-    background-image: url('Img/Godzila=hover.png');
-}
+
+
