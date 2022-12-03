@@ -233,6 +233,17 @@ header{
     background-color: #1E1E1E;
     border:#1E1E1E;
 }
+#mov{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-content: flex-start;
+}
+.movie{
+    text-decoration: none;
+}
 .all-movies-row{
     display: grid;
 	grid-template-columns: repeat(3, 20rem);
@@ -280,10 +291,14 @@ header{
     width: 63.875rem;
     height: 27.5rem;
     margin-bottom: 3.125rem;
-    padding-left: 8rem;
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
+    margin-left: 8rem;
+}
+.movie-col #movie-text{
+    /* width:14.5rem; */
+    width:48.30rem;
 }
 #movie-title{
     font-family: 'Open Sans';

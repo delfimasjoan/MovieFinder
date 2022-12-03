@@ -1,6 +1,6 @@
 let page = 1;
 let movie_info= '';
-
+// let cards = document.querySelector(".movies");
 let lastMovie;
 
 //Infinit scroll
@@ -76,11 +76,11 @@ const getMovies = async() => {
             console.log(response);
             
             // let movie_info= '';
-            let message= '';
-            const cards = document.querySelector(".movies");
+             let message= '';
 
+            let cards = document.querySelector(".movies");
             response.forEach(movie => {
-                //overview 
+            //overview 
                 if (cards.classList.contains("all-movies-row")){
                     if (movie.overview.length > 84) {
                         message= movie.overview.slice(0,84)+'...';
@@ -98,8 +98,8 @@ const getMovies = async() => {
                 }
 
                 movie_info += `
-                    <a href="Movie.html" style="text-decoration:none">
-                        <div class="movie-row" id="mov" style="background-image:url(https://image.tmdb.org/t/p/w500/${movie.backdrop_path})" >                      
+                    <a href="Movie.html" class="movie-row movie" style="background-image:url(https://image.tmdb.org/t/p/w500/${movie.backdrop_path})">
+                        <div id="mov">                      
                             <p id="watch">WATCH</p>
                             <h5 id="movie-title">${movie.title}</h5>
                             <p id="movie-rating">${movie.popularity}</p>
