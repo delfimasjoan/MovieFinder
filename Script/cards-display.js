@@ -31,8 +31,7 @@ function toggleDisplay() {
     <rect y="0.508118" width="58" height="35.9733" rx="3" fill="#373737"/>
     <rect x="39" y="6.50812" width="12" height="24" rx="2" fill="#D9D9D9"/>
     <rect x="23" y="6.50812" width="12" height="24" rx="2" fill="#D9D9D9"/>
-    <rect x="7" y="6.50812" width="12" height="24" rx="2" fill="#D9D9D9"/>
-</svg>`
+    <rect x="7" y="6.50812" width="12" height="24" rx="2" fill="#D9D9D9"/> </svg>`
 
   } else {
 
