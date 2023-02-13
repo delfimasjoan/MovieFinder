@@ -1,6 +1,6 @@
 let page = 1;
 let movie_info= '';
-
+// let cards = document.querySelector(".movies");
 let lastMovie;
 
 //Infinit scroll
@@ -63,12 +63,13 @@ const getMovies = async() => {
             
             let pelicula = `
                 <h6 id="banner-genre">${getGenre(response_1.genre_ids)}</h6>
-                <p id="banner-rating">${response_1.popularity}</p>
+                <p id="banner-rating">${response_1.vote_count}</p>
                 <h5 id="banner-title">${response_1.title}</h5>
                 <p id="banner-text">${banner_mess}</p>
-                <button id="watch-click" name="Watch">Watch Now</button>
+                <button id="watch-click" name="Watch" onclick=movieInfo(${response_1.id})>Watch Now</button>
             `;
             document.querySelector('.banner-text').innerHTML= pelicula;
+
 
             // Most watched
 
@@ -76,11 +77,11 @@ const getMovies = async() => {
             console.log(response);
             
             // let movie_info= '';
-            let message= '';
-            const cards = document.querySelector(".movies");
+             let message= '';
 
+            let cards = document.querySelector(".movies");
             response.forEach(movie => {
-                //overview 
+            //overview 
                 if (cards.classList.contains("all-movies-row")){
                     if (movie.overview.length > 84) {
                         message= movie.overview.slice(0,84)+'...';
@@ -88,7 +89,8 @@ const getMovies = async() => {
                     else{
                         message=movie.overview;
                     }
-                }else{
+                }
+                else {
                     if (movie.overview.length > 184){
                         message= movie.overview.slice(0,184)+'...';
                     }
@@ -98,17 +100,17 @@ const getMovies = async() => {
                 }
 
                 movie_info += `
-                    <a href="Movie.html" style="text-decoration:none">
-                        <div class="movie-row" id="mov" style="background-image:url(https://image.tmdb.org/t/p/w500/${movie.backdrop_path})" >                      
+                    <a href="#" onclick=movieInfo(${movie.id}) class="movie-row movie" style="background-image:url(https://image.tmdb.org/t/p/w500/${movie.backdrop_path})">
+                        <div id="mov">                      
                             <p id="watch">WATCH</p>
                             <h5 id="movie-title">${movie.title}</h5>
-                            <p id="movie-rating">${movie.popularity}</p>
+                            <p id="movie-rating">${movie.vote_count}</p>
                             <p id="movie-text">${message}</p>
                         </div>
                     </a>`
                                     
             });
-            document.querySelector(".all-movies-row").innerHTML=movie_info;
+            document.querySelector(".movies").innerHTML=movie_info;
 
             //Infinit scroll
             if(page<1000){
@@ -124,17 +126,20 @@ const getMovies = async() => {
             let search_box= document.getElementsByClassName("search-res")[0];
             let search=document.getElementById("search");
             data.results.forEach(element =>{
-                const {poster_path,title} = element;
+                const {poster_path,title,id} = element;
                 let card = document.createElement('a');
-                card.href='Movie.html';
+                card.className="card";
+                card.id=id;
+                card.onclick=function(){
+                    movieInfo(id)
+                }
                 card.innerHTML=`<img src="https://image.tmdb.org/t/p/w500/${poster_path}" alt="">
                     <div class="content-search">
                         <h3>${title}</h3>
-                    </div>`;
-
-                
+                    </div>`;            
                 search_box.appendChild(card);
                 })
+
             search.addEventListener("keyup", () => {
                 let filter =search.value.toUpperCase();
                 let a = search_box.getElementsByTagName('a');
@@ -154,8 +159,7 @@ const getMovies = async() => {
                         search_box.style.display='';
                     }
                 }
-            })
-
+            });
 
         } else if(response_a.status==401){
             console.log('Wrong key')
@@ -168,9 +172,7 @@ const getMovies = async() => {
         console.log(error);
     }
 
-    
 }
-
 getMovies();
 
 
